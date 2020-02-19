@@ -1,0 +1,13 @@
+﻿  Compiling CUDA source file kernel.cu...
+  
+  C:\Users\adams\source\repos\projekt_7\projekt_7>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\bin\nvcc.exe" -gencode=arch=compute_30,code=\"sm_30,compute_30\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.23.28105\bin\HostX86\x64" -x cu  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.2\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc142.pdb /FS /Zi  /MD " -o x64\Release\kernel.cu.obj "C:\Users\adams\source\repos\projekt_7\projekt_7\kernel.cu" 
+C:/Users/adams/source/repos/projekt_7/projekt_7/kernel.cu(55): warning : variable "wavHeader_d" was declared but never referenced
+  
+C:/Users/adams/source/repos/projekt_7/projekt_7/kernel.cu(56): warning : variable "wavHeaderPtr" was declared but never referenced
+  
+  kernel.cu
+C:/Users/adams/source/repos/projekt_7/projekt_7/kernel.cu(123): warning C4244: "inicjowanie": konwersja z "uint64_t" do "int", możliwa utrata danych
+C:/Users/adams/source/repos/projekt_7/projekt_7/kernel.cu(55): warning C4101: "wavHeader_d": lokalna zmienna, do której nie istnieje odwołanie
+     Trwa tworzenie biblioteki C:\Users\adams\source\repos\projekt_7\x64\Release\projekt_7.lib i obiektu C:\Users\adams\source\repos\projekt_7\x64\Release\projekt_7.exp
+  LINK : określono opcję /LTCG, lecz generowanie kodu nie było wymagane; usuń opcję /LTCG z wiersza polecenia konsolidatora w celu podwyższenia wydajności konsolidatora
+  projekt_7.vcxproj -> C:\Users\adams\source\repos\projekt_7\x64\Release\projekt_7.exe
